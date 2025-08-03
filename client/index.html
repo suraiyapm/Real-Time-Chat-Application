@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Messenger Pigeons Chat</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
 
-    <body>
-        <div id="container-shiz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Messenger Pigeons Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container-shiz">
         <div id="left">
-            <p id="info">I think the tricky parts (challenges faces) included just the process convenience things.
+            <p class="info">I think the tricky parts (challenges faces) included just the process convenience things.
                 In our group project (MedSift) I believe it's Vite that we are using that adds sort of convenience
                 and workflow features, like the easy r and o for restarting and opening the running server stuff.
                 Here, I did some Google-ing before realizing that, at least, setting up the npm script to run the server
                 with the short terminal command was pretty simple! That was an interesting one to figure out, since
                 I didn't realize it was so simple before (my npm run dev script).
-                <br/><br/><br/>
-                Besides that, there isn't a lot I could think of besides a little bug fixing near the end where something
+                <br /><br />
+                Besides that, there isn't a lot I could think of besides a little bug fixing near the end where
+                something
                 wasn't working as expected. Once it all functions as normal, though, design can be sort of fun to
                 experiment with!
+                <br />
+                One random other fun little challenge was figuring out that browser default margin little bit at the
+                top.
+                To have there be no gap in my css with the #left being 100vh (gap was showing at the top), I had to make
+                body margin 0, even though no buffer was specified by me, myself.
             </p>
         </div>
         <div id="chatroom-shiz">
-        <div id="container-note"></div>
-        <form id="container-send">
-            <input type="text" id="inputNote">
-            <button type="submit" id="button-send">Fly, Pigeon!</button>
-        </form>
+            <div id="container-note"></div>
+            <form id="container-send">
+                <input type="text" id="inputNote">
+                <button type="submit" id="button-send">Fly, Pigeon!</button>
+            </form>
+        </div>
+        <div id="right">
+            <p class="info">Another thing was getting the layout right (how I wanted it). To achieve this,
+                I messed with the sizing and flex and all that, it was a bit fun.
+            </p>
         </div>
     </div>
-        <script src="/socket.io/socket.io.js"></script>
-        <script src="script.js"></script>
-    </body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
 
 </html>
