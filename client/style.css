@@ -26,7 +26,8 @@ body {
 
 #left {
     width:400px;
-    margin-right:20px;
+    padding-right:20px;
+    margin-left:5px;
     display:block;
     background-color: rgb(15, 35, 52);
     height:100vh;
@@ -34,7 +35,8 @@ body {
 
 #right {
     width:200px;
-    margin-left:20px;
+    padding-left:20px;
+    margin-right:5px;
     display:block;
     background-color:rgb(15, 35, 52);
     height:100vh;
@@ -47,6 +49,8 @@ body {
 #container-note div {
     background-color:rgb(31, 45, 57);
     padding:4px;
+    margin-left:4px;
+
 }
 
 #container-note div:nth-child(2n) {
@@ -54,23 +58,35 @@ body {
 }
 
 #container-send {
-    position:fixed;
+    /* position:fixed;
     padding-bottom:20px;
     bottom:20px;
     background-image:linear-gradient(rgb(12, 22, 30),rgb(8, 8, 40));
     padding-left:30px;
     padding-right:30px;
-    padding-top:5px;
+    padding-top:12px; */
+
+    position: fixed;
+    left:50%;
+    bottom:8px;
+    background-image: linear-gradient(rgb(12,22,30),rgb(8,8,40));
+    display:flex;
+    align-items: center;
+    gap: 6px;
 }
 
-#note-input {
+#inputNote {
     flex-grow: 4;
+    background-color:rgb(6, 4, 25);
+    color:white;
+    padding:4px;
 }
 
 button {
     background-image:linear-gradient(rgb(59, 59, 102),rgb(16, 15, 20));
     color:white;
     font-weight:bold;
+    padding:6px;
 }
 
 #chatroom-shiz {
