@@ -1,0 +1,38 @@
+body {
+    display:flex;
+    justify-content:center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#container-note {
+    width:80%;
+}
+
+#container-note div {
+    background-color:rgb(133, 139, 207);
+    padding:4px;
+}
+
+#container-note div:nth-child(2n) {
+    background-color:rgb(255, 193, 226);
+}
+
+#container-send {
+    position:fixed;
+    padding-bottom:20px;
+    bottom:20px;
+    background-image:linear-gradient(rgb(255, 36, 211),rgb(17, 17, 255));
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:5px;
+}
+
+#note-input {
+    flex-grow: 2;
+}
+
+button {
+    background-image:linear-gradient(blue,black);
+    color:white;
+    font-weight:bold;
+}
